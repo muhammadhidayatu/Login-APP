@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="left-panel">
+      <div class="logo-block">
+        <div></div>
+        <div></div>
+      </div>
+      <h1>Welcome!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+    <div class="right-panel" id="form-container">
+      <h2>Sign in</h2>
+      <form action="login.php" method="POST">
+        <div class="input-group">
+          <label for="username">User Name</label>
+          <input type="text" id="username" name="username" placeholder="TechTree" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="********" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="social-icons">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" title="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X" title="X">
+        </div>
+        <div class="register-link">
+          <p>Don't have an account? <a href="#" onclick="showRegister(event)">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
